@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0B1522;
+    color: #F3F4F6;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbars for menus and table views */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1522;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2E42;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C89B3C;
+}
+
+/* Maritime wave pattern subtle accents */
+.bg-maritime-mesh {
+  background-color: #0B1522;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(200, 155, 60, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(14, 53, 85, 0.25) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(10, 25, 45, 0.6) 0px, transparent 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #B4861F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

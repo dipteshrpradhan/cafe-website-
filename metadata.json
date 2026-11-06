@@ -1,0 +1,6 @@
+{
+  "name": "The Captain's Cafe",
+  "description": "Master portal for The Captain's Cafe featuring interactive menus, instant table reservations, aesthetic gallery, voyage loyalty club, customer reviews, and a live Content Management System (CMS).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
